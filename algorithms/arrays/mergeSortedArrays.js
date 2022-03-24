@@ -14,7 +14,9 @@ function mergeSortedArrays(arr1, arr2) {
     if (arr2.length === 0) {
         return arr1;
     }
+    // while the array1Item OR array2Item are not undefined
     while (array1Item || array2Item) {
+        // if arra2Item is not undefined OR array1Item is less then array2Item
         if (!array2Item || array1Item < array2Item) {
             newArr.push(array1Item);
             array1Item = arr1[i];
