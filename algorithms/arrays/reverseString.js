@@ -15,6 +15,8 @@ function reverse(str) {
 
 }
 
+
 console.log(reverse('Hi my name is Nolan'));
 console.log(reverse(''));
 console.log(reverse(1));
+
