@@ -31,6 +31,17 @@
 //     }
 //     return undefined
 // }
+// function profitLossRatio(itemName, product) {
+
+//     for (let i = 0; i < itemName.length; i++) {
+//         for (let j = 0; j < itemName.length; j++) {
+//             if (itemName[i] === product[j]) {
+//                 return=
+//             }
+//         }
+//     }
+//     return undefined
+// }
 
 // O(n)
 // decreased the time complexity but it increases
