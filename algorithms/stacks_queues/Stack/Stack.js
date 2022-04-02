@@ -24,9 +24,16 @@ class Node {
   
     push(data){
     const newNode = new Node(data);
-    newNode.next = this.top;
-    this.top = newNode;
+    
+    if(this.length === 0){
+      this.top = newNode;
+    } else{
+      const holdingPointer = this.top;
+      this.top = newNode;
+      this.top.next = holdingPointer;
+    }
     this.length++;
+    return this
     }
   
     pop(){
@@ -46,18 +53,18 @@ class Node {
     }
   
     printStack(){ // For learning purpose
-      console.log("TOP")
       let runner = this.top;
       while(runner){
         // console.log(runner.data);
         runner= runner.next
+        console.log(runner)
       }
     }
   }
   
-  let s1 = new Stack();
-    s1.push(1);
-  console.log(s1.isEmpty())
+  const s1 = new Stack();
+  s1.push(1);
+  // console.log(s1.isEmpty())
   s1.push(2);
   s1.push(3);
   s1.printStack(); 
@@ -67,10 +74,10 @@ class Node {
   // [ 2 ]
   // [ 1 ]
   
-  console.log(s1.pop()); //expected: [ 3 ]
-  s1.printStack();
-  console.log(s1.size());
-  console.log(s1.peek());
+  // console.log(s1.pop()); //expected: [ 3 ]
+  // s1.printStack();
+  // console.log(s1.size());
+  // console.log(s1.peek());
   //expected: 3
   // TOP
   // [ 2 ] 

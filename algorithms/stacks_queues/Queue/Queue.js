@@ -18,17 +18,14 @@ class SLLQueue {
 
     isEmpty() {
         // check if the queue is empty
-        if (this.front === null) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.front ? true : false;
     }
 
     getFront() {
         //return the front
         return this.front ? this.front.data : null
     }
+
     enqueue(data) {
         // construct a new node and add to the current queue
         const newNode = new Node(data)
@@ -53,7 +50,7 @@ class SLLQueue {
         let runner = this.front;
 
         while (runner) {
-            console.log(runner.data)
+            // console.log(runner.data)
             if (runner.data === target) {
                 return true;
             } else {
