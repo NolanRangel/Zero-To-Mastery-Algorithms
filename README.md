@@ -7,4 +7,4 @@ Javascript and Java.
 
 
 
-The only difference between a master and beginner. The master has failed more times then the beginner has tried.
+"The only difference between a master and beginner. The master has failed more times then the beginner has tried."
