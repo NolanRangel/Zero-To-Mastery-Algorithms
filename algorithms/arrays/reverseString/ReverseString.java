@@ -1,4 +1,4 @@
-package algorithms.arrays;
+package algorithms.arrays.reverseString;
 
 public class ReverseString {
 
