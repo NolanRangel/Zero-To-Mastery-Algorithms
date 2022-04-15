@@ -1,6 +1,6 @@
 
 
-function findFactorialRecursive(number) {
+function findFactorialRecursive(number) {   //O(n)
     if (number === 2) {
         return 2
     }
@@ -9,7 +9,7 @@ function findFactorialRecursive(number) {
 }
 
 
-function findFactorialIterative(number) {
+function findFactorialIterative(number) {   //O(n)
     let answer = 1;
     if (number === 2) {
         answer = 2;
