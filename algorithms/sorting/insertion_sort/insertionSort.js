@@ -1,4 +1,4 @@
-
+// extemely fast for nearly sorted lists
 
 
 const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
@@ -18,6 +18,9 @@ function insertionSort(array) {
 }
 
 console.log(insertionSort(numbers));
+
+
+
 
 function insertionSort(inputArr) {
     let n = inputArr.length;
