@@ -1,4 +1,4 @@
-package algorithms.linked_lists.doubly;
+package linked_lists.doubly;
 
 public class MyDoublyLinkedList {
   private MyDoublyLinkedNode head;
@@ -15,14 +15,14 @@ public class MyDoublyLinkedList {
     MyDoublyLinkedNode newNode = new MyDoublyLinkedNode(value, null, head);
     head.setPrevious(newNode);
     head = newNode;
-    length ++;
+    length++;
   }
 
   public void append(int value) {
     MyDoublyLinkedNode newNode = new MyDoublyLinkedNode(value, tail, null);
     tail.setNext(newNode);
     tail = newNode;
-    length ++;
+    length++;
   }
 
   public void printList() {
@@ -59,7 +59,7 @@ public class MyDoublyLinkedList {
 
   public void remove(int index) {
     index = wrapIndex(index);
-    if(index == 0) {
+    if (index == 0) {
       head = head.getNext();
       return;
     }
@@ -80,7 +80,7 @@ public class MyDoublyLinkedList {
     return currentNode;
   }
 
-  private int wrapIndex(int index) { //Used for wrapping the given index to make sure it's valid
+  private int wrapIndex(int index) { // Used for wrapping the given index to make sure it's valid
     return Math.max(Math.min(index, length - 1), 0);
   }
 
@@ -102,7 +102,7 @@ public class MyDoublyLinkedList {
     mySinglyLinkedList.append(4);
     mySinglyLinkedList.prepend(10);
     mySinglyLinkedList.printList();
-    mySinglyLinkedList.insert(2,15);
+    mySinglyLinkedList.insert(2, 15);
     mySinglyLinkedList.printList();
     mySinglyLinkedList.remove(0);
     mySinglyLinkedList.printList();

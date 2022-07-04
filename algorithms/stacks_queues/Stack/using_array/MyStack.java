@@ -1,4 +1,4 @@
-package data_structures.stacks.using_array;
+package stacks_queues.Stack.using_array;
 
 import java.util.ArrayList;
 import java.util.EmptyStackException;
@@ -11,14 +11,14 @@ public class MyStack {
   }
 
   public int peak() {
-    if(array.size() == 0) {
+    if (array.size() == 0) {
       throw new EmptyStackException();
     }
     return array.get(this.array.size() - 1);
   }
 
   public int pop() {
-    if(array.size() == 0) {
+    if (array.size() == 0) {
       throw new EmptyStackException();
     }
     return array.remove(array.size() - 1);

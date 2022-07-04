@@ -1,4 +1,4 @@
-package algorithms.linked_lists.doubly;
+package linked_lists.doubly;
 
 public class MyDoublyLinkedNode {
 
